@@ -50,7 +50,7 @@ class WeCorsAnyWhereProxy implements BypassProxy {
 
   @override
   String buildProxyUrl(String pageUrl) {
-    return 'https://we-cors-anywhere.herokuapp.com/$pageUrl';
+    return 'https://api-proxy.hidoc.sg/$pageUrl';
   }
 
   @override
