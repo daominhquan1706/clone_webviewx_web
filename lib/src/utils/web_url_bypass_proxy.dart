@@ -20,7 +20,7 @@ class BridgedBypassProxy implements BypassProxy {
 
   @override
   String buildProxyUrl(String pageUrl) {
-    return 'https://cors.bridged.cc/$pageUrl';
+    return 'https://api-proxy.hidoc.sg/$pageUrl';
   }
 
   @override
