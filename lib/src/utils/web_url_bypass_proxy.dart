@@ -20,7 +20,7 @@ class BridgedBypassProxy implements BypassProxy {
 
   @override
   String buildProxyUrl(String pageUrl) {
-    return 'https://api-proxy.hidoc.sg/$pageUrl';
+    return pageUrl;
   }
 
   @override
@@ -50,7 +50,7 @@ class WeCorsAnyWhereProxy implements BypassProxy {
 
   @override
   String buildProxyUrl(String pageUrl) {
-    return 'https://api-proxy.hidoc.sg/$pageUrl';
+    return pageUrl;
   }
 
   @override
