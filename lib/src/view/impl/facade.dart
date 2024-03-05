@@ -33,8 +33,7 @@ class WebViewX extends StatelessWidget implements view_interface.WebViewX {
   /// Callback which returns a referrence to the [WebViewXController]
   /// being created.
   @override
-  final Function(ctrl_interface.WebViewXController controller)?
-      onWebViewCreated;
+  final Function(ctrl_interface.WebViewXController controller)? onWebViewCreated;
 
   /// A set of [EmbeddedJsContent].
   ///
@@ -110,8 +109,7 @@ class WebViewX extends StatelessWidget implements view_interface.WebViewX {
     this.dartCallBacks = const {},
     this.ignoreAllGestures = false,
     this.javascriptMode = JavascriptMode.unrestricted,
-    this.initialMediaPlaybackPolicy =
-        AutoMediaPlaybackPolicy.requireUserActionForAllMediaTypes,
+    this.initialMediaPlaybackPolicy = AutoMediaPlaybackPolicy.requireUserActionForAllMediaTypes,
     this.onPageStarted,
     this.onPageFinished,
     this.navigationDelegate,
@@ -122,7 +120,6 @@ class WebViewX extends StatelessWidget implements view_interface.WebViewX {
 
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError(
-        'Cannot call build on the facade implementation of WebViewX.');
+    throw UnimplementedError('Cannot call build on the facade implementation of WebViewX.');
   }
 }
